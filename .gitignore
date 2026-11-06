@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+dist/
+next-env.d.ts
+*.tsbuildinfo
+
+# Environment files
+.env
+.env*.local
+.env*.bak
+.env*.smokebak
+.vercel
+
+# Local tooling & test caches
+coverage/
+.vitest/
+test-results/
+playwright-report/
+temp_recordings/
+recordings/
+*.log
+.DS_Store
+Thumbs.db
+
+# PDFs, archives, database & media files generated locally
+*.pdf
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.webm
+*.mp4
+*.mov
+*.avi
+
+# Python leftovers, virtual environments, and caches
+*.py
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.venv/
+venv/
+env/
+.pytest_cache/
+*.egg-info/
+requirements*.txt

@@ -1,0 +1,62 @@
+# Dependencies - Vercel installs dependencies in its clean build environment
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js local build and cache artifacts
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# Local Environment files
+.env*.local
+.env*.bak
+.env*.smokebak
+.vercel
+
+# Tests, benchmarks, and test runners
+tests/
+coverage/
+.vitest/
+vitest.config.ts
+playwright.config.ts
+playwright-report/
+test-results/
+scripts/
+assets/
+temp_recordings/
+recordings/
+
+# Python leftovers, virtual environments, and caches
+*.py
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.venv/
+venv/
+env/
+.pytest_cache/
+*.egg-info/
+requirements*.txt
+
+# Database, archive & media files
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.webm
+*.mp4
+*.mov
+*.avi
+*.pdf
+*.log
+.DS_Store
+Thumbs.db
+*.bak

@@ -1,0 +1,86 @@
+import type { NextConfig } from "next";
+import path from "node:path";
+
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+  poweredByHeader: false,
+  compress: true,
+  productionBrowserSourceMaps: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  experimental: {
+    optimizePackageImports: ["lucide-react", "framer-motion"],
+  },
+  // Constrain file tracing to project root and exclude non-runtime artifacts
+  outputFileTracingRoot: path.resolve(__dirname),
+  outputFileTracingExcludes: {
+    "*": [
+      // Static public assets (served at edge by Vercel CDN, never needed inside lambdas)
+      "public/**",
+      // Next build cache
+      ".next/cache/**",
+      // Compiler and bundler dev-only dependencies
+      "node_modules/@swc/**",
+      "node_modules/@next/swc*/**",
+      "node_modules/@next/swc-*/**",
+      "node_modules/@esbuild/**",
+      "node_modules/esbuild/**",
+      "node_modules/typescript/**",
+      "node_modules/@types/**",
+      "node_modules/rollup/**",
+      "node_modules/@rollup/**",
+      "node_modules/caniuse-lite/**",
+      "node_modules/terser/**",
+      "node_modules/uglify-js/**",
+      "node_modules/webpack/**",
+      // Test and browser runners
+      "node_modules/@playwright/**",
+      "node_modules/playwright/**",
+      "node_modules/playwright-core/**",
+      "node_modules/vitest/**",
+      "node_modules/@vitest/**",
+      "node_modules/vite/**",
+      // CSS tooling
+      "node_modules/tailwindcss/**",
+      "node_modules/postcss/**",
+      "node_modules/autoprefixer/**",
+      // Native image modules
+      "node_modules/@img/**",
+      "node_modules/sharp/**",
+      // Test suites, scripts and docs
+      "tests/**",
+      "scripts/**",
+      "assets/**",
+      "**/*.test.ts",
+      "**/*.test.tsx",
+      "**/*.spec.ts",
+      "**/*.spec.tsx",
+      "**/*.md",
+      "**/*.map",
+      // Leftover media, python, database, and archive binaries
+      "**/*.py",
+      "**/*.pyc",
+      "**/*.db",
+      "**/*.sqlite",
+      "**/*.sqlite3",
+      "**/*.zip",
+      "**/*.tar",
+      "**/*.tar.gz",
+      "**/*.tgz",
+      "**/*.gz",
+      "**/*.webm",
+      "**/*.mp4",
+      "**/*.mov",
+      "**/*.png",
+      "**/*.jpg",
+      "**/*.jpeg",
+      "**/*.svg",
+    ],
+  },
+};
+
+export default nextConfig;

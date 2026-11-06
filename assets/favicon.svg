@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2005/svg" viewBox="0 0 48 48" fill="none" width="48" height="48">
+  <defs>
+    <linearGradient id="aether_cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="aether_indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="aether_glow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Dark Rounded Plate -->
+  <rect width="48" height="48" rx="12" fill="#0B0F19"/>
+  <rect width="48" height="48" rx="12" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Converging Prism & Research Nexus Emblem -->
+  <!-- Left Ascending Beam (Knowledge Path) -->
+  <path d="M 24 8 L 10 36 L 16 36 L 24 19 L 32 36 L 38 36 Z" fill="url(#aether_glow)" opacity="0.95"/>
+  <!-- Central Converging Diamond Core (Deep Intelligence) -->
+  <polygon points="24,14 30,26 24,32 18,26" fill="url(#aether_cyan)"/>
+  <!-- Horizontal Horizon Link (Cross-Agent Synthesis) -->
+  <path d="M 14 30 L 34 30 L 31 34 L 17 34 Z" fill="url(#aether_indigo)" opacity="0.85"/>
+  <!-- Quantum Focus Sparkle -->
+  <circle cx="24" cy="24" r="2.5" fill="#FFFFFF"/>
+</svg>
+

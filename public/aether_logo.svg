@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2005/svg" viewBox="0 0 380 72" fill="none" width="380" height="72">
+  <defs>
+    <linearGradient id="logo_grad_cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="logo_grad_indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Icon (Left) -->
+  <g transform="translate(4, 6)">
+    <path d="M 30 6 L 10 46 L 18 46 L 30 21 L 42 46 L 50 46 Z" fill="url(#logo_grad_cyan)"/>
+    <polygon points="30,16 38,32 30,40 22,32" fill="url(#logo_grad_indigo)"/>
+    <path d="M 16 38 L 44 38 L 40 43 L 20 43 Z" fill="#6366F1" opacity="0.85"/>
+    <circle cx="30" cy="30" r="2.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Typography: AETHER RESEARCH -->
+  <text x="68" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="24" font-weight="800" letter-spacing="0.08em" fill="#F8FAFC">AETHER</text>
+  <text x="180" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="24" font-weight="300" letter-spacing="0.16em" fill="#38BDF8">RESEARCH</text>
+
+  <!-- Tagline: Think deeper. Discover further. -->
+  <text x="69" y="54" font-family="'JetBrains Mono', monospace, sans-serif" font-size="9.5" font-weight="500" letter-spacing="0.14em" fill="#94A3B8">THINK DEEPER. DISCOVER FURTHER.</text>
+</svg>
+
